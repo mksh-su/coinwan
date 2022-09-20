@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./img/logo-white.svg";
+import "./css/base.scss";
+import "./css/header.scss";
+import "./css/home.scss";
+import "./css/footer.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div className="dark-bg">
+      <header className="header">
+        <a href="/">
+          {/* <img src={logo} className="app-logo" alt="logo" /> */}
         </a>
       </header>
+      <section className="intro-section">
+        <div className="container">
+          <h1 className="h1-heading">Begin your Crypto Trading Journey Now!</h1>
+          <p className="text text-big">Better trading Better life</p>
+          <div className="btn-group">
+            <a href="/" className="btn btn-blue-fill">
+              Get Started
+            </a>
+            <a href="/" className="btn btn-white">
+              Spot
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="table-section"></section>
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-row">
+            <img src={logo} className="app-logo" alt="logo" />
+            <div className="col"></div>
+            <div className="col"></div>
+            <div className="col"></div>
+            <div className="col"></div>
+            <div className="col"></div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

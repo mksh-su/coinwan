@@ -1,0 +1,41 @@
+@import "variables";
+
+.h1-heading {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.text {
+  color: $lightgrey-color;
+
+  &-big {
+    font-size: 24px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 40px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  min-width: 168px;
+  text-decoration: none;
+  text-align: center;
+
+  &-blue-fill {
+    background-color: $blue-color;
+    border: 1px solid $blue-color;
+    color: white;
+  }
+
+  &-white {
+    border: 1px solid #FFFFFF;
+  }
+
+  &-group {
+    .btn + .btn {
+        margin-left: 25px;
+    }
+  }
+}
