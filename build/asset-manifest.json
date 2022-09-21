@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/coinwan/static/css/main.065533f0.css",
-    "main.js": "/coinwan/static/js/main.cd9385b0.js",
+    "main.css": "/coinwan/static/css/main.fbcd74e5.css",
+    "main.js": "/coinwan/static/js/main.4a511af4.js",
     "static/js/787.e1f3bfe7.chunk.js": "/coinwan/static/js/787.e1f3bfe7.chunk.js",
+    "static/media/screens.png": "/coinwan/static/media/screens.b210969030a4755a821c.png",
     "static/media/lines.svg": "/coinwan/static/media/lines.4dc0b3d209557aa042ef.svg",
     "static/media/anlan.svg": "/coinwan/static/media/anlan.77afb7ce73ea55a94178243866755a1f.svg",
     "static/media/capital-support.svg": "/coinwan/static/media/capital-support.596701282bb7a4af5af80ce433921851.svg",
@@ -17,12 +18,12 @@
     "static/media/medium.svg": "/coinwan/static/media/medium.530821d2a184f604dc47395bdc51f976.svg",
     "index.html": "/coinwan/index.html",
     "static/media/facebook.svg": "/coinwan/static/media/facebook.3862fefc36d432983c9cdfd6c4387100.svg",
-    "main.065533f0.css.map": "/coinwan/static/css/main.065533f0.css.map",
-    "main.cd9385b0.js.map": "/coinwan/static/js/main.cd9385b0.js.map",
+    "main.fbcd74e5.css.map": "/coinwan/static/css/main.fbcd74e5.css.map",
+    "main.4a511af4.js.map": "/coinwan/static/js/main.4a511af4.js.map",
     "787.e1f3bfe7.chunk.js.map": "/coinwan/static/js/787.e1f3bfe7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.065533f0.css",
-    "static/js/main.cd9385b0.js"
+    "static/css/main.fbcd74e5.css",
+    "static/js/main.4a511af4.js"
   ]
 }
