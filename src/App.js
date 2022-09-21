@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import logo from "./img/logo-white.svg";
+import capital from "./img/logos/capital-support.svg";
+import snk from "./img/logos/snk.svg";
+import anlan from "./img/logos/anlan.svg";
 import fb from "./img/socials/facebook.svg";
 import twitter from "./img/socials/twitter.svg";
 import github from "./img/socials/github.svg";
@@ -8,6 +11,8 @@ import medium from "./img/socials/medium.svg";
 import steemit from "./img/socials/steemit.svg";
 import "./css/base.scss";
 import "./css/home.scss";
+import "./css/partner.scss";
+import "./css/subscribe.scss";
 
 const Home = () => {
   useEffect(() => {
@@ -67,6 +72,31 @@ const Home = () => {
         </div>
       </section>
       <section className="table-section"></section>
+      <section className="app-section">
+        <div className="container">
+          <div className="app-row">
+
+          </div>
+        </div>
+      </section>
+      <section className="partner-section">
+        <div className="container">
+          <div className="partner-row">
+              <img src={capital} className="partner-row-img" alt="" />
+              <img src={snk} className="partner-row-img" alt="" />
+              <img src={anlan} className="partner-row-img" alt="" />
+          </div>
+        </div>
+      </section>
+      <section className="subscribe-section">
+        <div className="container">
+          <h2 className="h2-heading">Join traders around the world and reshape your finances</h2>
+          <form action="" className="subscribe-form">
+            <input type="email" className="form-input" placeholder="Enter email address"/>
+            <input type="submit" className="btn btn-white-fill" value="Get started"/>
+          </form>
+        </div>
+      </section>
       <footer className="footer">
         <div className="container">
           <div className="footer-row">
