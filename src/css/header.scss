@@ -1,0 +1,39 @@
+.logo {
+    width: 95px;
+    height: 21px;
+    background-image: url(../img/logo-white.svg);
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+
+    @media (max-width: 768px) {
+        background-image: url(../img/logo-mobile.svg);
+        width: 26px;
+        height: 28px;
+    }
+}
+
+.header {
+    margin: 20px 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    &-list {
+        display: flex;
+        list-style: none;
+        margin: 0 0 0 50px;
+        gap: 25px;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+        }
+
+        &-right {
+            margin-left: auto;
+        }
+    }
+}

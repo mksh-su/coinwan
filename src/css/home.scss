@@ -1,3 +1,15 @@
 .intro-section {
-    padding: 120px 0 160px;
+    padding: 100px 0 160px;
+    background-image: url(../img/lines.svg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    .h1-heading {
+        margin: 0 0 15px;
+    }
+
+    .text-big {
+        margin: 15px 0 50px;
+    }
 }
