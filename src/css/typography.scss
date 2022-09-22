@@ -28,10 +28,16 @@
 }
 
 .text {
-  color: $lightgrey-color;
-
   &-big {
     font-size: 24px;
+    
+    @media (max-width: 992px) {
+      font-size: 16px;
+    }
+  }
+
+  &-lightgrey {
+    color: $lightgrey-color;
   }
 }
 

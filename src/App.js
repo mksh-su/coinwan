@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import logo from "./img/logo-white.svg";
+import ios from "./img/icons/ios.svg";
+import android from "./img/icons/android.svg";
+import qr from "./img/qr.png";
 import screens from "./img/screens.png";
 import capital from "./img/logos/capital-support.svg";
 import snk from "./img/logos/snk.svg";
@@ -63,7 +66,7 @@ const Home = () => {
       <section className="intro-section">
         <div className="container">
           <h1 className="h1-heading">Begin your Crypto Trading Journey Now!</h1>
-          <p className="text text-big">Better trading Better life</p>
+          <p className="text text-big text-lightgrey">Better trading Better life</p>
           <div className="btn-group">
             <a href="/" className="btn btn-blue-fill">
               Get Started
@@ -83,7 +86,31 @@ const Home = () => {
               <p className="text text-big">
                 Extraordinary trading experience on mobile
               </p>
-              <p>Download now to get easy access to the secure digital financial service.</p>
+              <p className="text text-lightgrey">
+                Download now to get easy access to the secure digital financial
+                service.
+              </p>
+              <div className="app-get">
+                <div className="app-link-container">
+                  <a href="" className="app-link">
+                    <img src={ios} className="" />
+                    <span className="app-link-text">
+                      <span>Scan to download</span>
+                      <b>iOS App</b>
+                    </span>
+                  </a>
+                  <a href="" className="app-link">
+                    <img src={android} className="" />
+                    <span className="app-link-text">
+                      <span>Scan to download</span>
+                      <b>Android App</b>
+                    </span>
+                  </a>
+                </div>
+                <div className="app-qr">
+                  <img src={qr} className="app-qr-img" />
+                </div>
+              </div>
             </div>
             <div className="app-col">
               <img src={screens} className="app-screens" alt="logo" />
