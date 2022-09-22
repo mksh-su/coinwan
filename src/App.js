@@ -15,10 +15,12 @@ import medium from "./img/socials/medium.svg";
 import steemit from "./img/socials/steemit.svg";
 import "./css/base.scss";
 import "./css/form.scss";
+import "./css/table.scss";
 import "./css/home.scss";
 import "./css/app.scss";
 import "./css/partner.scss";
 import "./css/subscribe.scss";
+import "./js/scripts.js";
 
 const Home = () => {
   useEffect(() => {
@@ -65,19 +67,336 @@ const Home = () => {
       </header>
       <section className="intro-section">
         <div className="container">
-          <h1 className="h1-heading">Begin your Crypto Trading Journey Now!</h1>
-          <p className="text text-big text-lightgrey">Better trading Better life</p>
-          <div className="btn-group">
-            <a href="/" className="btn btn-blue-fill">
-              Get Started
-            </a>
-            <a href="/" className="btn btn-white">
-              Spot
-            </a>
+          <div className="intro-row">
+            <div className="intro-col">
+              <h1 className="h1-heading">
+                Begin your Crypto Trading Journey Now!
+              </h1>
+              <p className="text text-big text-lightgrey">
+                Better trading Better life
+              </p>
+              <div className="btn-group">
+                <a href="/" className="btn btn-blue-fill">
+                  Get Started
+                </a>
+                <a href="/" className="btn btn-white">
+                  Spot
+                </a>
+              </div>
+            </div>
+            <div className="intro-col">
+              <div className="swiper intro-swiper">
+                <div className="swiper-wrapper intro-swiper-wrapper">
+                  <div className="swiper-slide intro-swiper-slide">Slide 1</div>
+                  <div className="swiper-slide intro-swiper-slide">Slide 2</div>
+                  <div className="swiper-slide intro-swiper-slide">Slide 3</div>
+                </div>
+
+                <div className="swiper-button-prev intro-swiper-button-prev"></div>
+                <div className="swiper-button-next intro-swiper-button-next"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section className="table-section"></section>
+      <section className="table-section">
+        <div className="container">
+          <div className="table-wrapper">
+            <div className="table-above-text">
+              <a href="" className="hot-link">
+                (Individual Competition) Introductio
+              </a>
+              <a href="" className="hot-link">
+                Kudx Launches Global Innovation Z
+              </a>
+              <a href="">Announcement on the Suspension of D</a>
+              <a href="" className="more-link">
+                More
+              </a>
+            </div>
+            <div className="table-container">
+              <div className="tabs-nav">
+                <a href="#usdt" data-tab="usdt" className="b-nav-tab active">
+                  USDT
+                </a>
+                <a href="#usdc" data-tab="usdc" className="b-nav-tab">
+                  USDC
+                </a>
+                <a href="#btc" data-tab="btc" className="b-nav-tab">
+                  BTC
+                </a>
+              </div>
+              <div id="usdt" className="b-tab active">
+                <table className="table">
+                  <tbody>
+                    <tr>
+                      <th className="table-heading">Futures</th>
+                      <th className="table-heading">Last Price</th>
+                      <th className="table-heading">24H Change</th>
+                      <th className="table-heading">24H Low</th>
+                      <th className="table-heading">24H High</th>
+                      <th className="table-heading">24H VOL</th>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">USDT</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">USDT</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge decrease">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">USDT</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge decrease">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">USDT</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">USDT</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge decrease">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="usdc" className="b-tab">
+                <table className="table">
+                  <tbody>
+                    <tr>
+                      <th className="table-heading">Futures</th>
+                      <th className="table-heading">Last Price</th>
+                      <th className="table-heading">24H Change</th>
+                      <th className="table-heading">24H Low</th>
+                      <th className="table-heading">24H High</th>
+                      <th className="table-heading">24H VOL</th>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">USDC</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">USDC</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge decrease">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">USDC</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge decrease">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">USDC</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">USDC</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge decrease">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="btc" className="b-tab">
+                <table className="table">
+                  <tbody>
+                    <tr>
+                      <th className="table-heading">Futures</th>
+                      <th className="table-heading">Last Price</th>
+                      <th className="table-heading">24H Change</th>
+                      <th className="table-heading">24H Low</th>
+                      <th className="table-heading">24H High</th>
+                      <th className="table-heading">24H VOL</th>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">BTC</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">BTC</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge decrease">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">BTC</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge decrease">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">BTC</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                    <tr>
+                      <td className="table-item">
+                        BTC/<span className="text-darkblue">BTC</span>
+                      </td>
+                      <td className="table-item">
+                        21,852.07{" "}
+                        <span className="text-darkblue">$21,857.97</span>
+                      </td>
+                      <td className="table-item">
+                        <span className="profit-badge decrease">+7.37%</span>
+                      </td>
+                      <td className="table-item">21,210.57</td>
+                      <td className="table-item">22,077.92</td>
+                      <td className="table-item">72,992,921.92</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="app-section">
         <div className="container">
           <div className="app-row">
@@ -93,14 +412,14 @@ const Home = () => {
               <div className="app-get">
                 <div className="app-link-container">
                   <a href="" className="app-link">
-                    <img src={ios} className="" />
+                    <img src={ios} className="" alt=""/>
                     <span className="app-link-text">
                       <span>Scan to download</span>
                       <b>iOS App</b>
                     </span>
                   </a>
                   <a href="" className="app-link">
-                    <img src={android} className="" />
+                    <img src={android} className="" alt=""/>
                     <span className="app-link-text">
                       <span>Scan to download</span>
                       <b>Android App</b>
@@ -108,7 +427,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="app-qr">
-                  <img src={qr} className="app-qr-img" />
+                  <img src={qr} className="app-qr-img" alt="" />
                 </div>
               </div>
             </div>

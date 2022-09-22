@@ -1,30 +1,40 @@
-.intro-section {
-  padding: 100px 0 160px;
-  background-image: url(../img/lines.svg);
-  background-size: contain;
-  background-position: top right;
-  background-repeat: no-repeat;
+.intro {
+  &-section {
+    padding: 100px 0 160px;
+    background-image: url(../img/lines.svg);
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
 
-  .h1-heading {
-    margin: 0 0 15px;
-  }
+    .h1-heading {
+      margin: 0 0 15px;
+    }
 
-  .text-big {
-    margin: 15px 0 50px;
-  }
+    .text-big {
+      margin: 15px 0 50px;
+    }
 
-  @media (max-width: 992px) {
-    text-align: center;
-    background-position: top left;
+    @media (max-width: 992px) {
+      text-align: center;
+      background-position: top left;
 
-    .btn-blue-fill {
-      min-width: unset;
+      .btn-blue-fill {
+        min-width: unset;
+      }
+    }
+
+    @media (max-width: 385px) {
+      .btn {
+        min-width: unset;
+      }
     }
   }
 
-  @media (max-width: 385px) {
-    .btn {
-      min-width: unset;
-    }
+  &-row {
+    display: flex;
+  }
+
+  &-col {
+    max-width: 50%;
   }
 }

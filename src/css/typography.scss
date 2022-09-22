@@ -30,7 +30,7 @@
 .text {
   &-big {
     font-size: 24px;
-    
+
     @media (max-width: 992px) {
       font-size: 16px;
     }
@@ -38,6 +38,10 @@
 
   &-lightgrey {
     color: $lightgrey-color;
+  }
+
+  &-darkblue {
+    color: $dark-blue-color;
   }
 }
 
@@ -80,5 +84,19 @@
     .btn + .btn {
         margin-left: 25px;
     }
+  }
+}
+
+.profit-badge {
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: $green-dark-color;
+  color: $green-bright-color;
+  font-weight: 500;
+  border-radius: 4px;
+
+  &.decrease {
+    background-color: $red-dark-color;
+    color: $red-bright-color;
   }
 }
