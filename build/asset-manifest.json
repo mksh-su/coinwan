@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/coinwan/static/css/main.74d5a9ff.css",
+    "main.js": "/coinwan/static/js/main.6afb509c.js",
+    "static/js/787.e1f3bfe7.chunk.js": "/coinwan/static/js/787.e1f3bfe7.chunk.js",
+    "static/media/screens.png": "/coinwan/static/media/screens.b210969030a4755a821c.png",
+    "static/media/lines.svg": "/coinwan/static/media/lines.4dc0b3d209557aa042ef.svg",
+    "static/media/anlan.svg": "/coinwan/static/media/anlan.77afb7ce73ea55a94178243866755a1f.svg",
+    "static/media/capital-support.svg": "/coinwan/static/media/capital-support.596701282bb7a4af5af80ce433921851.svg",
+    "static/media/snk.svg": "/coinwan/static/media/snk.058afa803a95deabcab3150bfcf0c87d.svg",
+    "static/media/logo-white.svg": "/coinwan/static/media/logo-white.6c3192bea1a3f9e97cf642c72a499ba5.svg",
+    "static/media/blue-bg.svg": "/coinwan/static/media/blue-bg.1c2e46db5734f07fa993.svg",
+    "static/media/reddit.svg": "/coinwan/static/media/reddit.7fd0fb35fd9405a107e21fefc4d8e97d.svg",
+    "static/media/android.svg": "/coinwan/static/media/android.cd9123fff5c3c80024b10fa879ead758.svg",
+    "static/media/steemit.svg": "/coinwan/static/media/steemit.16df5f9b2330959bff998ed1aa5d9153.svg",
+    "static/media/github.svg": "/coinwan/static/media/github.4aecc6e8e49ec0338da1ebbd9331bfaa.svg",
+    "static/media/ios.svg": "/coinwan/static/media/ios.38079db754db0f0db38c52265f0ecccb.svg",
+    "static/media/twitter.svg": "/coinwan/static/media/twitter.3b586c71f37cdfdd33230ca26f2e81d9.svg",
+    "static/media/logo-mobile.svg": "/coinwan/static/media/logo-mobile.261307234b0adc392da3.svg",
+    "static/media/medium.svg": "/coinwan/static/media/medium.530821d2a184f604dc47395bdc51f976.svg",
+    "index.html": "/coinwan/index.html",
+    "static/media/facebook.svg": "/coinwan/static/media/facebook.3862fefc36d432983c9cdfd6c4387100.svg",
+    "main.74d5a9ff.css.map": "/coinwan/static/css/main.74d5a9ff.css.map",
+    "main.6afb509c.js.map": "/coinwan/static/js/main.6afb509c.js.map",
+    "787.e1f3bfe7.chunk.js.map": "/coinwan/static/js/787.e1f3bfe7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74d5a9ff.css",
+    "static/js/main.6afb509c.js"
+  ]
+}
