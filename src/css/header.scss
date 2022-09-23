@@ -1,5 +1,7 @@
+@import "variables";
+
 .logo {
-  width: 95px;
+  min-width: 95px;
   height: 21px;
   background-image: url(../img/logo-white.svg);
   background-position: center;
@@ -17,6 +19,16 @@
 
 .header {
   margin: 20px 0;
+  position: absolute;
+  width: 100%;
+
+  .container {
+    @media (max-width: 992px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }
 
 .nav {
@@ -31,7 +43,10 @@
     align-items: center;
 
     @media (max-width: 992px) {
-      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+      padding: 0 0 0 20px;
     }
 
     a {
@@ -40,6 +55,72 @@
 
     &-right {
       margin-left: auto;
+
+      @media (max-width: 992px) {
+        margin-left: 0;
+        margin-top: 25px;
+      }
     }
+
+    &-links {
+      width: 100%;
+      display: flex;
+    }
+  }
+
+  @media (max-width: 992px) {
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.slideout-close {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .slideout-menu {
+    background-color: $black-color1;
+    position: fixed;
+    right: -100vw;
+    transition: 0.3s;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+
+    .btn {
+      display: none;
+    }
+  }
+
+  .slideout-menu.is-open {
+    right: 0;
+  }
+
+  .slideout-close {
+    font-size: 2em;
+    position: fixed;
+    right: 25px;
+    top: 13px;
+    text-decoration: none;
+  }
+
+  .header-open .slideout-close {
+    z-index: 11;
+    display: block;
+  }
+
+  .slideout-toggle {
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    background-image: url(../img/icons/burger.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }

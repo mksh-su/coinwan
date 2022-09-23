@@ -3,8 +3,16 @@
 .table {
   width: 100%;
 
+  @media (max-width: 768px) {
+    padding-right: 25px;
+  }
+
   &-section {
-    margin-bottom: 150px;
+    margin: -150px 0 150px;
+
+    @media (max-width: 992px) {
+      margin: 0;
+    }
   }
 
   &-heading {
@@ -22,6 +30,10 @@
 
     &:last-of-type {
       text-align: right;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 12px;
     }
   }
 
@@ -43,6 +55,16 @@
     &:last-of-type {
       text-align: right;
     }
+
+    @media (max-width: 992px) {
+      white-space: nowrap;
+      padding-right: 35px;
+      font-size: 12px;
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
   }
 
   tr:last-of-type .table-item {
@@ -53,6 +75,11 @@
     background-color: $black-color2;
     border-radius: 12px;
     padding: 55px 25px;
+
+    @media (max-width: 992px) {
+      overflow: auto;
+      padding: 30px 20px;
+    }
   }
 
   &-above-text {
@@ -61,6 +88,11 @@
     align-items: center;
     margin-bottom: 20px;
 
+    @media (max-width: 1280px) {
+      justify-content: flex-start;
+      overflow: auto;
+    }
+
     a {
       text-decoration: none;
       color: $grey-color1;
@@ -68,10 +100,20 @@
       display: flex;
       align-items: center;
 
+      @media (max-width: 1280px) {
+        white-space: nowrap;
+        font-size: 12px;
+      }
+
       + a {
         padding-left: 25px;
         margin-left: 25px;
         border-left: 1px solid $dark-blue-color;
+
+        @media (max-width: 1280px) {
+          padding-left: 10px;
+          margin-left: 10px;
+        }
       }
     }
 
@@ -86,6 +128,10 @@
         width: 15px;
         height: 19px;
         display: inline-block;
+
+        @media (max-width: 992px) {
+          margin-right: 9px;
+        }
       }
     }
 

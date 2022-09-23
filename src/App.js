@@ -1,5 +1,9 @@
 import { useEffect } from "react";
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
 import logo from "./img/logo-white.svg";
+import slide1 from "./img/slider/slide-1.jpg";
+import slide2 from "./img/slider/slide-2.jpg";
 import ios from "./img/icons/ios.svg";
 import android from "./img/icons/android.svg";
 import qr from "./img/qr.png";
@@ -20,14 +24,81 @@ import "./css/home.scss";
 import "./css/app.scss";
 import "./css/partner.scss";
 import "./css/subscribe.scss";
-import "./js/scripts.js";
 
 const Home = () => {
   useEffect(() => {
+    // addclass to body
     document.body.classList.add("dark-bg");
-    // return () => {
-    //   document.body.classList.remove('dark-bg')
-    // }
+
+    const introSwiper = new Swiper(".intro-swiper", {
+      // Optional parameters
+      slidesPerView: 1.13,
+      spaceBetween: 15,
+      breakpoints: {
+        576: {
+          slidesPerView: 1.5,
+          spaceBetween: 25,
+        },
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: ".intro-swiper-button-next",
+        prevEl: ".intro-swiper-button-prev",
+      },
+    });
+    
+    // tabs
+    function Tabs() {
+      let bindAll = function () {
+        let menuElements = document.querySelectorAll("[data-tab]");
+        for (let i = 0; i < menuElements.length; i++) {
+          menuElements[i].addEventListener("click", change, false);
+        }
+      }; 
+    
+      let clear = function () {
+        let menuElements = document.querySelectorAll("[data-tab]");
+        for (let i = 0; i < menuElements.length; i++) {
+          menuElements[i].classList.remove("active");
+          let id = menuElements[i].getAttribute("data-tab");
+          document.getElementById(id).classList.remove("active");
+        }
+      };
+    
+      let change = function (e) {
+        clear();
+        e.target.classList.add("active");
+        e.preventDefault();
+        let id = e.currentTarget.getAttribute("data-tab");
+        document.getElementById(id).classList.add("active");
+      };
+    
+      bindAll();
+    }
+    let connectTabs = new Tabs();
+
+    // header burger
+    if (window.screen.width <= 992) {
+      // Set Elements
+      let menu = document.getElementById("slideout-menu");
+      let toggleButton = document.getElementById("slideout-toggle");
+      let closeButton = document.getElementById("slideout-close");
+
+      // Toggle Menu
+      toggleButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        menu.classList.toggle("is-open");
+        document.body.classList.add("header-open"); 
+      });
+
+      // Close Menu
+      closeButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        menu.classList.remove("is-open");
+        document.body.classList.remove("header-open");
+      });
+    }
   }, []);
   return (
     <div className="wrapper">
@@ -35,34 +106,44 @@ const Home = () => {
         <div className="container">
           <nav className="nav">
             <a href="/" className="logo"></a>
-            <ul className="nav-list">
-              <li className="nav-list-item">
-                <a href="">Exchange</a>
-              </li>
-              <li className="nav-list-item">
-                <a href="">Market</a>
-              </li>
-              <li className="nav-list-item">
-                <a href="">Support</a>
-              </li>
-              <li className="nav-list-item">
-                <a href="">Buy crypto</a>
-              </li>
-              <li className="nav-list-item">
-                <a href="">Rewards</a>
-              </li>
-            </ul>
-            <ul className="nav-list nav-list-right">
-              <li className="nav-list-item">
-                <a href="">Sign In</a>
-              </li>
-              <li className="nav-list-item">
-                <a href="" className="btn btn-blue-fill">
-                  Get Started
-                </a>
-              </li>
-            </ul>
+            <a id="slideout-close" className="slideout-close" href="#">
+              &times;
+            </a>
+            <div className="nav-list-links slideout-menu" id="slideout-menu">
+              <ul className="nav-list">
+                <li className="nav-list-item">
+                  <a href="">Exchange</a>
+                </li>
+                <li className="nav-list-item">
+                  <a href="">Market</a>
+                </li>
+                <li className="nav-list-item">
+                  <a href="">Support</a>
+                </li>
+                <li className="nav-list-item">
+                  <a href="">Buy crypto</a>
+                </li>
+                <li className="nav-list-item">
+                  <a href="">Rewards</a>
+                </li>
+              </ul>
+              <ul className="nav-list nav-list-right">
+                <li className="nav-list-item">
+                  <a href="">Sign In</a>
+                </li>
+                <li className="nav-list-item">
+                  <a href="" className="btn btn-blue-fill">
+                    Get Started
+                  </a>
+                </li>
+              </ul>
+            </div>
           </nav>
+          <a id="slideout-toggle" className="slideout-toggle" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
         </div>
       </header>
       <section className="intro-section">
@@ -87,11 +168,13 @@ const Home = () => {
             <div className="intro-col">
               <div className="swiper intro-swiper">
                 <div className="swiper-wrapper intro-swiper-wrapper">
-                  <div className="swiper-slide intro-swiper-slide">Slide 1</div>
-                  <div className="swiper-slide intro-swiper-slide">Slide 2</div>
-                  <div className="swiper-slide intro-swiper-slide">Slide 3</div>
+                  <div className="swiper-slide intro-swiper-slide">
+                    <img src={slide1} alt="" />
+                  </div>
+                  <div className="swiper-slide intro-swiper-slide">
+                    <img src={slide2} alt="" />
+                  </div>
                 </div>
-
                 <div className="swiper-button-prev intro-swiper-button-prev"></div>
                 <div className="swiper-button-next intro-swiper-button-next"></div>
               </div>
@@ -412,14 +495,14 @@ const Home = () => {
               <div className="app-get">
                 <div className="app-link-container">
                   <a href="" className="app-link">
-                    <img src={ios} className="" alt=""/>
+                    <img src={ios} className="" alt="" />
                     <span className="app-link-text">
                       <span>Scan to download</span>
                       <b>iOS App</b>
                     </span>
                   </a>
                   <a href="" className="app-link">
-                    <img src={android} className="" alt=""/>
+                    <img src={android} className="" alt="" />
                     <span className="app-link-text">
                       <span>Scan to download</span>
                       <b>Android App</b>
