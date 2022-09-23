@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/coinwan/static/css/main.55c841e0.css",
-    "main.js": "/coinwan/static/js/main.c47f5ed9.js",
+    "main.css": "/coinwan/static/css/main.e9e14bc9.css",
+    "main.js": "/coinwan/static/js/main.0a4c2c27.js",
     "static/js/787.e1f3bfe7.chunk.js": "/coinwan/static/js/787.e1f3bfe7.chunk.js",
     "static/media/screens.png": "/coinwan/static/media/screens.b210969030a4755a821c.png",
     "static/media/lines.svg": "/coinwan/static/media/lines.4dc0b3d209557aa042ef.svg",
+    "static/media/slide-2.jpg": "/coinwan/static/media/slide-2.4f750056db577e1491ac.jpg",
+    "static/media/slide-1.jpg": "/coinwan/static/media/slide-1.7b4651d09b9c5d4653d7.jpg",
     "static/media/anlan.svg": "/coinwan/static/media/anlan.77afb7ce73ea55a94178243866755a1f.svg",
     "static/media/capital-support.svg": "/coinwan/static/media/capital-support.596701282bb7a4af5af80ce433921851.svg",
     "static/media/snk.svg": "/coinwan/static/media/snk.058afa803a95deabcab3150bfcf0c87d.svg",
@@ -21,13 +23,15 @@
     "index.html": "/coinwan/index.html",
     "static/media/fire.svg": "/coinwan/static/media/fire.feb2f0620081f14801ec.svg",
     "static/media/facebook.svg": "/coinwan/static/media/facebook.3862fefc36d432983c9cdfd6c4387100.svg",
+    "static/media/arrow-right.svg": "/coinwan/static/media/arrow-right.52c3e95f17223f463b3c.svg",
     "static/media/darkblue-arrow-right.svg": "/coinwan/static/media/darkblue-arrow-right.43d2ee403e1c264b4289.svg",
-    "main.55c841e0.css.map": "/coinwan/static/css/main.55c841e0.css.map",
-    "main.c47f5ed9.js.map": "/coinwan/static/js/main.c47f5ed9.js.map",
+    "static/media/burger.svg": "/coinwan/static/media/burger.e3d7ba2a169604f0919c.svg",
+    "main.e9e14bc9.css.map": "/coinwan/static/css/main.e9e14bc9.css.map",
+    "main.0a4c2c27.js.map": "/coinwan/static/js/main.0a4c2c27.js.map",
     "787.e1f3bfe7.chunk.js.map": "/coinwan/static/js/787.e1f3bfe7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55c841e0.css",
-    "static/js/main.c47f5ed9.js"
+    "static/css/main.e9e14bc9.css",
+    "static/js/main.0a4c2c27.js"
   ]
 }
