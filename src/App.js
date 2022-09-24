@@ -2,6 +2,12 @@ import { useEffect } from "react";
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 import logo from "./img/logo-white.svg";
+import account from "./img/icons/account.svg";
+import accountInfo from "./img/icons/account.svg";
+import accountSecurity from "./img/icons/security.svg";
+import accountVerification from "./img/icons/verification.svg";
+import accountReferrals from "./img/icons/referrals.svg";
+import accountLogout from "./img/icons/logout.svg";
 import slide1 from "./img/slider/slide-1.jpg";
 import slide2 from "./img/slider/slide-2.jpg";
 import ios from "./img/icons/ios.svg";
@@ -40,14 +46,14 @@ const Home = () => {
           spaceBetween: 25,
         },
       },
-    
+
       // Navigation arrows
       navigation: {
         nextEl: ".intro-swiper-button-next",
         prevEl: ".intro-swiper-button-prev",
       },
     });
-    
+
     // tabs
     function Tabs() {
       let bindAll = function () {
@@ -55,8 +61,8 @@ const Home = () => {
         for (let i = 0; i < menuElements.length; i++) {
           menuElements[i].addEventListener("click", change, false);
         }
-      }; 
-    
+      };
+
       let clear = function () {
         let menuElements = document.querySelectorAll("[data-tab]");
         for (let i = 0; i < menuElements.length; i++) {
@@ -65,7 +71,7 @@ const Home = () => {
           document.getElementById(id).classList.remove("active");
         }
       };
-    
+
       let change = function (e) {
         clear();
         e.target.classList.add("active");
@@ -73,7 +79,7 @@ const Home = () => {
         let id = e.currentTarget.getAttribute("data-tab");
         document.getElementById(id).classList.add("active");
       };
-    
+
       bindAll();
     }
     let connectTabs = new Tabs();
@@ -89,7 +95,7 @@ const Home = () => {
       toggleButton.addEventListener("click", function (e) {
         e.preventDefault();
         menu.classList.toggle("is-open");
-        document.body.classList.add("header-open"); 
+        document.body.classList.add("header-open");
       });
 
       // Close Menu
@@ -99,6 +105,20 @@ const Home = () => {
         document.body.classList.remove("header-open");
       });
     }
+
+    // header settings change
+    const lang = document.querySelectorAll(".website-settings-lang");
+    const currency = document.querySelectorAll(".website-settings-currency");
+    lang.forEach(function (el) {
+      el.addEventListener("click", function () {
+        document.querySelector(".website-language").textContent = el.textContent;
+      });
+    });
+    currency.forEach(function (el) {
+      el.addEventListener("click", function () {
+        document.querySelector(".website-currency").textContent = el.textContent;
+      });
+    }); 
   }, []);
   return (
     <div className="wrapper">
@@ -112,29 +132,141 @@ const Home = () => {
             <div className="nav-list-links slideout-menu" id="slideout-menu">
               <ul className="nav-list">
                 <li className="nav-list-item">
-                  <a href="">Exchange</a>
+                  <a href="#">Exchange</a>
                 </li>
                 <li className="nav-list-item">
-                  <a href="">Market</a>
+                  <a href="#">Market</a>
                 </li>
                 <li className="nav-list-item">
-                  <a href="">Support</a>
+                  <a href="#">Support</a>
                 </li>
                 <li className="nav-list-item">
-                  <a href="">Buy crypto</a>
+                  <a href="#">Buy crypto</a>
                 </li>
                 <li className="nav-list-item">
-                  <a href="">Rewards</a>
+                  <a href="#">Rewards</a>
                 </li>
               </ul>
               <ul className="nav-list nav-list-right">
                 <li className="nav-list-item">
-                  <a href="">Sign In</a>
+                  <a href="#">Sign In</a>
                 </li>
                 <li className="nav-list-item">
-                  <a href="" className="btn btn-blue-fill">
+                  <a href="#" className="btn btn-blue-fill">
                     Get Started
                   </a>
+                </li>
+                <li className="nav-list-item">
+                  <a href="#">
+                    <img src={account} alt="" />
+                  </a>
+
+                  <div className="account-settings">
+                    
+                  </div>
+                </li>
+                <li className="nav-list-item website-settings-select">
+                  <a href="#">
+                    <span className="website-language">English</span>{" "}
+                    <span className="text-lightgrey">/</span>{" "}
+                    <span className="text-lightgrey website-currency">USD</span>
+                  </a>
+                  <form action="" className="website-settings-choice">
+                    <div className="website-settings-col">
+                      <span className="website-settings-heading">Language</span>
+                      <ul className="website-settings-list">
+                        <li>
+                          <label className="form-label website-settings-lang">
+                            English
+                            <input type="radio" name="lang" />
+                            <span className="form-label-checkmark"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label className="form-label website-settings-lang">
+                            Deutsch
+                            <input type="radio" name="lang" />
+                            <span className="form-label-checkmark"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label className="form-label website-settings-lang">
+                            Français
+                            <input type="radio" name="lang" />
+                            <span className="form-label-checkmark"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label className="form-label website-settings-lang">
+                            한국어
+                            <input type="radio" name="lang" />
+                            <span className="form-label-checkmark"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label className="form-label website-settings-lang">
+                            Español
+                            <input type="radio" name="lang" />
+                            <span className="form-label-checkmark"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label className="form-label website-settings-lang">
+                            Türkçe
+                            <input type="radio" name="lang" />
+                            <span className="form-label-checkmark"></span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="website-settings-col">
+                      <span className="website-settings-heading">Currency</span>
+                      <ul className="website-settings-list">
+                        <li>
+                          <label className="form-label website-settings-currency">
+                            USD
+                            <input type="radio" name="currency" />
+                            <span className="form-label-checkmark"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label className="form-label website-settings-currency">
+                            EUR
+                            <input type="radio" name="currency" />
+                            <span className="form-label-checkmark"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label className="form-label website-settings-currency">
+                            GBR
+                            <input type="radio" name="currency" />
+                            <span className="form-label-checkmark"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label className="form-label website-settings-currency">
+                            JPY
+                            <input type="radio" name="currency" />
+                            <span className="form-label-checkmark"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label className="form-label website-settings-currency">
+                            KRW
+                            <input type="radio" name="currency" />
+                            <span className="form-label-checkmark"></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label className="form-label website-settings-currency">
+                            CNY
+                            <input type="radio" name="currency" />
+                            <span className="form-label-checkmark"></span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
                 </li>
               </ul>
             </div>

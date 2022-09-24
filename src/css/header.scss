@@ -31,6 +31,53 @@
   }
 }
 
+.website-settings {
+  &-select {
+    position: relative;
+    &:hover {
+      .website-settings-choice {
+        display: flex;
+      }
+    }
+  }
+  &-choice {
+    background-color: $black-color2;
+    width: 440px;
+    padding: 25px 20px 0;
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+
+    * {
+      font-size: 14px;
+    }
+
+    @media (max-width: 992px) {
+      left: 0;
+      right: unset;
+      max-width: 260px;
+    }
+  }
+  &-col {
+    width: 50%;
+  }
+  &-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin: 25px 0;
+    }
+  }
+  &-heading {
+    display: block;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid $black-color3;
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -57,8 +104,7 @@
       margin-left: auto;
 
       @media (max-width: 992px) {
-        margin-left: 0;
-        margin-top: 25px;
+        margin: 25px 0;
       }
     }
 
