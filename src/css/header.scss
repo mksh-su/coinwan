@@ -22,11 +22,99 @@
   position: absolute;
   width: 100%;
 
+  a {
+    transition: .3s;
+  }
+
   .container {
     @media (max-width: 992px) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+  }
+}
+
+.account {
+  &-settings {
+    padding: 40px 20px 15px;
+    background-color: $black-color2;
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    width: 300px;
+    * {
+      font-size: 14px;
+    }
+    &-select {
+      position: relative;
+      &:hover {
+        .account-settings {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    &-id {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+    &-avatar {
+      background-color: $blue-color;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 15px;
+      cursor: default;
+      user-select: none;
+    }
+    &-name {
+      display: flex;
+      flex-direction: column;
+      &-id {
+        color: $lightgrey-color;
+        margin-top: 5px;
+        cursor: pointer;
+        &-number {
+          color: $lightgrey-color;
+        }
+        &::after {
+          content: "";
+          background-image: url(../img/icons/copy.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 12px;
+          height: 12px;
+          display: inline-block;
+          margin-left: 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+    &-list {
+      padding: 25px 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid $black-color3;
+      gap: 25px;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+
+        &:hover {
+          color: $blue-color;
+        }
+      }
     }
   }
 }
@@ -98,6 +186,10 @@
 
     a {
       text-decoration: none;
+
+      &:hover {
+        color: $blue-color;
+      }
     }
 
     &-right {
