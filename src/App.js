@@ -104,6 +104,24 @@ const Home = () => {
         menu.classList.remove("is-open");
         document.body.classList.remove("header-open");
       });
+
+      // account dropdown
+      let accountDropdown = document.querySelector(".account-settings-dropdown");
+      accountDropdown.addEventListener("click", function () {
+        accountDropdown.classList.toggle("is-open");
+      });
+
+      // choice on mobile
+      document.querySelector(".website-language").addEventListener("click", function() {
+        document.querySelector(".website-settings-choice").classList.add("lang-is-open");
+      });
+      document.querySelector(".website-currency").addEventListener("click", function() {
+        document.querySelector(".website-settings-choice").classList.add("currency-is-open");
+      });
+      document.querySelector(".website-settings-close").addEventListener("click", function() {
+        document.querySelector(".website-settings-choice").classList.remove("lang-is-open");
+        document.querySelector(".website-settings-choice").classList.remove("currency-is-open");
+      })
     }
 
     // header settings change
@@ -196,7 +214,7 @@ const Home = () => {
                       </div>
                     </div>
                     <ul className="account-settings-list">
-                      <li>
+                      <li className="account-settings-dropdown">
                         <a href="#">
                           <img src={accountInfo} alt="" /> Account information
                         </a>
@@ -233,6 +251,7 @@ const Home = () => {
                     <span className="text-lightgrey website-currency">USD</span>
                   </a>
                   <form action="" className="website-settings-choice">
+                    <span className="website-settings-close"></span>
                     <div className="website-settings-col">
                       <span className="website-settings-heading">Language</span>
                       <ul className="website-settings-list">
@@ -379,14 +398,14 @@ const Home = () => {
         <div className="container">
           <div className="table-wrapper">
             <div className="table-above-text">
-              <a href="" className="hot-link">
+              <a href="#" className="hot-link">
                 (Individual Competition) Introductio
               </a>
-              <a href="" className="hot-link">
+              <a href="#" className="hot-link">
                 Kudx Launches Global Innovation Z
               </a>
-              <a href="">Announcement on the Suspension of D</a>
-              <a href="" className="more-link">
+              <a href="#">Announcement on the Suspension of D</a>
+              <a href="#" className="more-link">
                 More
               </a>
             </div>
@@ -687,14 +706,14 @@ const Home = () => {
               </p>
               <div className="app-get">
                 <div className="app-link-container">
-                  <a href="" className="app-link">
+                  <a href="#" className="app-link">
                     <img src={ios} className="" alt="" />
                     <span className="app-link-text">
                       <span>Scan to download</span>
                       <b>iOS App</b>
                     </span>
                   </a>
-                  <a href="" className="app-link">
+                  <a href="#" className="app-link">
                     <img src={android} className="" alt="" />
                     <span className="app-link-text">
                       <span>Scan to download</span>
