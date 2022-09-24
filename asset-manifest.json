@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/coinwan/static/css/main.e9e14bc9.css",
-    "main.js": "/coinwan/static/js/main.0a4c2c27.js",
+    "main.css": "/coinwan/static/css/main.02edb328.css",
+    "main.js": "/coinwan/static/js/main.f25b1976.js",
     "static/js/787.e1f3bfe7.chunk.js": "/coinwan/static/js/787.e1f3bfe7.chunk.js",
     "static/media/screens.png": "/coinwan/static/media/screens.b210969030a4755a821c.png",
     "static/media/lines.svg": "/coinwan/static/media/lines.4dc0b3d209557aa042ef.svg",
@@ -17,21 +17,26 @@
     "static/media/steemit.svg": "/coinwan/static/media/steemit.16df5f9b2330959bff998ed1aa5d9153.svg",
     "static/media/github.svg": "/coinwan/static/media/github.4aecc6e8e49ec0338da1ebbd9331bfaa.svg",
     "static/media/ios.svg": "/coinwan/static/media/ios.38079db754db0f0db38c52265f0ecccb.svg",
+    "static/media/account.svg": "/coinwan/static/media/account.bf950fdb290756ec2fdfb067978e404f.svg",
     "static/media/twitter.svg": "/coinwan/static/media/twitter.3b586c71f37cdfdd33230ca26f2e81d9.svg",
     "static/media/logo-mobile.svg": "/coinwan/static/media/logo-mobile.261307234b0adc392da3.svg",
     "static/media/medium.svg": "/coinwan/static/media/medium.530821d2a184f604dc47395bdc51f976.svg",
     "index.html": "/coinwan/index.html",
     "static/media/fire.svg": "/coinwan/static/media/fire.feb2f0620081f14801ec.svg",
     "static/media/facebook.svg": "/coinwan/static/media/facebook.3862fefc36d432983c9cdfd6c4387100.svg",
+    "static/media/verification.svg": "/coinwan/static/media/verification.e1a840bb1ad68ceec0d29e27116e0e0d.svg",
+    "static/media/referrals.svg": "/coinwan/static/media/referrals.53c12eef44a9f9aaccc3a47b486a165d.svg",
+    "static/media/logout.svg": "/coinwan/static/media/logout.338356c244bfbeb6dd4071131b298413.svg",
+    "static/media/security.svg": "/coinwan/static/media/security.2398800305c1f0c2e86a6de8b347be34.svg",
     "static/media/arrow-right.svg": "/coinwan/static/media/arrow-right.52c3e95f17223f463b3c.svg",
     "static/media/darkblue-arrow-right.svg": "/coinwan/static/media/darkblue-arrow-right.43d2ee403e1c264b4289.svg",
     "static/media/burger.svg": "/coinwan/static/media/burger.e3d7ba2a169604f0919c.svg",
-    "main.e9e14bc9.css.map": "/coinwan/static/css/main.e9e14bc9.css.map",
-    "main.0a4c2c27.js.map": "/coinwan/static/js/main.0a4c2c27.js.map",
+    "main.02edb328.css.map": "/coinwan/static/css/main.02edb328.css.map",
+    "main.f25b1976.js.map": "/coinwan/static/js/main.f25b1976.js.map",
     "787.e1f3bfe7.chunk.js.map": "/coinwan/static/js/787.e1f3bfe7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9e14bc9.css",
-    "static/js/main.0a4c2c27.js"
+    "static/css/main.02edb328.css",
+    "static/js/main.f25b1976.js"
   ]
 }
