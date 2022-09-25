@@ -40,6 +40,9 @@ const Home = () => {
       // Optional parameters
       slidesPerView: 1.13,
       spaceBetween: 15,
+      autoplay: {
+        delay: 5000,
+      },
       breakpoints: {
         576: {
           slidesPerView: 1.5,
@@ -106,22 +109,47 @@ const Home = () => {
       });
 
       // account dropdown
-      let accountDropdown = document.querySelector(".account-settings-dropdown");
+      let accountDropdown = document.querySelector(
+        ".account-settings-dropdown"
+      );
       accountDropdown.addEventListener("click", function () {
         accountDropdown.classList.toggle("is-open");
       });
 
       // choice on mobile
-      document.querySelector(".website-language").addEventListener("click", function() {
-        document.querySelector(".website-settings-choice").classList.add("lang-is-open");
-      });
-      document.querySelector(".website-currency").addEventListener("click", function() {
-        document.querySelector(".website-settings-choice").classList.add("currency-is-open");
-      });
-      document.querySelector(".website-settings-close").addEventListener("click", function() {
-        document.querySelector(".website-settings-choice").classList.remove("lang-is-open");
-        document.querySelector(".website-settings-choice").classList.remove("currency-is-open");
-      })
+      document
+        .querySelector(".website-language")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".website-settings-choice")
+            .classList.add("lang-is-open");
+        });
+      document
+        .querySelector(".website-currency")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".website-settings-choice")
+            .classList.add("currency-is-open");
+        });
+      document
+        .querySelector(".website-settings-close")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".website-settings-choice")
+            .classList.remove("lang-is-open");
+          document
+            .querySelector(".website-settings-choice")
+            .classList.remove("currency-is-open");
+        });
+
+      // moving the language/currency below other links
+      let navListFirst = document.getElementsByClassName("nav-list")[0];
+      let websiteSettings = document.getElementsByClassName(
+        "website-settings-select"
+      )[0];
+
+      // moving the elements to new containers
+      navListFirst.appendChild(websiteSettings);
     }
 
     // header settings change
@@ -363,7 +391,7 @@ const Home = () => {
           <div className="intro-row">
             <div className="intro-col">
               <h1 className="h1-heading">
-                Begin your Crypto Trading Journey Now!
+                Begin your Crypto&nbsp;Trading Journey&nbsp;Now!
               </h1>
               <p className="text text-big text-lightgrey">
                 Better trading Better life
@@ -380,6 +408,12 @@ const Home = () => {
             <div className="intro-col">
               <div className="swiper intro-swiper">
                 <div className="swiper-wrapper intro-swiper-wrapper">
+                  <div className="swiper-slide intro-swiper-slide">
+                    <img src={slide1} alt="" />
+                  </div>
+                  <div className="swiper-slide intro-swiper-slide">
+                    <img src={slide2} alt="" />
+                  </div>
                   <div className="swiper-slide intro-swiper-slide">
                     <img src={slide1} alt="" />
                   </div>

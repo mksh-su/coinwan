@@ -55,6 +55,7 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  transition: .3s;
 
   @media (max-width: 992px) {
     padding: 13px 30px;
@@ -68,16 +69,31 @@
     background-color: $blue-color;
     border: 1px solid $blue-color;
     color: white;
+
+    &:hover {
+      background-color: white;
+      color: $blue-color;
+    }
   }
 
   &-white-fill {
     background-color: white;
     border: 1px solid white;
     color: $blue-color;
+
+    &:hover {
+      background-color: $blue-color;
+      color: white;
+    }
   }
 
   &-white {
     border: 1px solid #FFFFFF;
+
+    &:hover {
+      border-color: $blue-color;
+      color: $blue-color;
+    }
   }
 
   &-group {
