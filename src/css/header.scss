@@ -209,6 +209,11 @@
               display: none;
             }
           }
+          &.lang-is-open.currency-is-open {
+            .website-settings-col:last-of-type {
+              display: block;
+            }
+          }
         }
       }
     }
@@ -266,7 +271,6 @@
     background-position: center;
     width: 14px;
     height: 14px;
-    display: inline-block;
     position: absolute;
     top: 30px;
     right: 30px;

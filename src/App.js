@@ -123,6 +123,9 @@ const Home = () => {
           document
             .querySelector(".website-settings-choice")
             .classList.add("lang-is-open");
+          document
+            .querySelector(".website-settings-choice")
+            .classList.remove("currency-is-open");
         });
       document
         .querySelector(".website-currency")
@@ -130,6 +133,9 @@ const Home = () => {
           document
             .querySelector(".website-settings-choice")
             .classList.add("currency-is-open");
+          document
+            .querySelector(".website-settings-choice")
+            .classList.remove("lang-is-open");
         });
       document
         .querySelector(".website-settings-close")
